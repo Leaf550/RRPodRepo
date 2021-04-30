@@ -1,25 +1,39 @@
-Pod::Spec.new do |spec|
+#
+# Be sure to run `pod lib lint RRCMNetwork.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
 
-  spec.name         = "RRCMNetwork"
-  spec.version      = "0.0.1"
-  spec.summary      = "掌上重邮网络组件库"
-  spec.description  = <<-DESC
-  掌上重邮网络组件库
-                   DESC
-
-  spec.homepage     = "https://github.com/RedrockMobile"
-  spec.license      = "MIT"
-  # spec.license    = { :type => "MIT", :file => "../../LICENSE" }
-
-  spec.author       = { "方昱恒" => "fangyuheng@bytedance.com" }
-
-  spec.source       = { :git => "https://github.com/fyhNB/RRCMNetwork" }
-
-  spec.source_files  = 'RRCMNetwork/**/*.swift'
+Pod::Spec.new do |s|
   
-  spec.dependency 'Alamofire'
-  spec.dependency 'RxSwift'
-  spec.dependency 'SwiftyJSON'
+  s.name             = 'RRCMNetwork'
+  s.version          = '0.0.1'
+  s.summary          = '掌上重邮网络库'
 
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
 
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
+
+  s.homepage         = 'https://github.com/fyhNB/RRCMNetwork'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'fyhNB' => '1374872604@qq.com' }
+  s.source           = { :git => 'https://github.com/fyhNB/RRCMNetwork.git', :tag => s.version.to_s }
+
+  s.ios.deployment_target = '11.0'
+
+  s.source_files = 'RRCMNetwork/Classes/**/*'
+
+  s.dependency 'Alamofire', '4.9.1'
+  s.dependency 'RxSwift', '5.1.1'
+  s.dependency 'SwiftyJSON', '4.0.0'
+  
 end
